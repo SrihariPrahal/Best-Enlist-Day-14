@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <script>
+            var FirstNumber;
+            var SecondNumber;
+            var Result;
+            function _add(){
+                var field1 = document.getElementById("Num1").value;
+                var field2 = document.getElementById("Num2").value;
+                var Result = parseFloat(field1) + parseFloat(field2);
+                document.getElementById("Answer").innerHTML="The Answer is " + Result;
+            }
+            function _sub(){
+                var field1 = document.getElementById("Num1").value;
+                var field2 = document.getElementById("Num2").value;
+                var Result = parseFloat(field1) - parseFloat(field2);
+                document.getElementById("Answer").innerHTML="The Answer is " + Result;
+                
+            }
+            function _divide(){
+                var field1 = document.getElementById("Num1").value;
+                var field2 = document.getElementById("Num2").value;
+                var Result = parseFloat(field1) / parseFloat(field2);
+                document.getElementById("Answer").innerHTML="The Answer is " + Result;
+            }
+            function _mul(){
+                var field1 = document.getElementById("Num1").value;
+                var field2 = document.getElementById("Num2").value;
+                var Result = parseFloat(field1) * parseFloat(field2);
+                document.getElementById("Answer").innerHTML="The Answer is " + Result;
+            }
+            
+            </script>
+        </head>
+        <center><body bgcolor="orange">
+            <form id="Form"><row><h1>Basic calculator</h1>
+                <centre><input type="text"placeholder="FirstNumber" id="Num1" style="background-color: whitesmoke">
+                    <br><br>
+                <input type="text" placeholder="SecondNumber" id="Num2" style="background-color: whitesmoke">
+                <br><br>
+                <input type="button" value="Add" onclick="_add()" style="background-color: chartreuse;" >
+                <br><br>
+                <input type="button" value="Subtract" onclick="_sub()" style="background-color: crimson;">
+                <br><br>
+                <input type="button" value="Divide" onclick="_divide()" style="background-color: darkgoldenrod;">
+                <br><br>
+                <input type="button" value="Multiply" onclick="_mul()" style="background-color: aqua;">
+                <br><br>
+                <h1 id="Answer"></h1>
+            </center>
+            </row></form></body></centre>
+    </html>
